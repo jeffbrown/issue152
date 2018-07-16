@@ -1,0 +1,7 @@
+import demo.Widget
+
+model {
+	Widget widget
+}
+
+json g.render(widget, [resolveTemplate: false])

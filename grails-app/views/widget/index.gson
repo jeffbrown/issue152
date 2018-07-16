@@ -1,0 +1,12 @@
+import demo.Widget
+import grails.gorm.PagedResultList
+
+model {
+    PagedResultList<Widget> widgetList
+}
+
+json {
+    total widgetList.totalCount
+    data tmpl.widget(widgetList)
+}
+
